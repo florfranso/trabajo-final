@@ -1,0 +1,572 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;¨*/
+}
+
+h2 {
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*tipografia*/
+
+
+
+/* -------ENCABEZADO- NAVEGADOR*--------*/
+
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr auto 0.2fr;
+    gap: 3px 0px;
+    grid-template-areas:
+        "encabezado encabezado"
+        "parte-principal parte-principal"
+        "pie-de-pagina pie-de-pagina";
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.26)), url(../multimedia/imagenes/pileta.jpg);
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    grid-area: encabezado;
+
+}
+
+.encabezado nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    right: 0px;
+    bottom: 150px;
+    background-color: #F190B7;
+    height: 40px;
+
+}
+
+.navegador nav ul li {
+    margin: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.encabezado nav ul li a {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #0f0f0f;
+    font-size: 20px;
+
+}
+
+.encabezado nav ul li a:hover {
+    color: #A63EC5;
+    text-shadow: none;
+    transition: 1sg;
+}
+
+.encabezado a img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+
+
+}
+
+
+
+/*-----PAGINA PRINCIPAL----------*/
+
+
+.parte-principal {
+    margin: 15px;
+    list-style: 2px;
+    position: relative;
+    grid-area: parte-principal;
+}
+
+h1 {
+    color: #a626aa;
+    font-weight: bold;
+    font-size: 7rem;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #FBD6D2;
+    width: 100%;
+    height: 20vh;
+
+
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    color: black;
+    line-height: 60px;
+
+}
+
+/*-----SECCION UNO-----*/
+.ultimas-noticias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+
+
+}
+
+.ultimas-noticias div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.ultimas-noticias div img {
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+    object-fit: cover;
+}
+
+.ultimas-noticias div iframe {
+    width: 300px;
+    height: 300px;
+    margin: 40px
+}
+
+.ultimas-noticias div h3 {
+    font-size: 2rem;
+    list-style: 0.5;
+}
+
+.ultimas-noticias div p {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+/*SECCION DOS*/
+
+
+.galeria-de-fotos {
+    font-family: 'Roboto Mono', monospace;
+
+
+}
+
+.galeria-de-fotos>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.galeria-de-fotos div img {
+    width: 550px;
+    height: 400px;
+    margin: 40px;
+    object-fit: cover;
+}
+
+.galeria-de-fotos div h3 {
+    font-size: 2rem;
+    list-style: 0.5;
+}
+
+
+
+
+/*PIE DE PAGINA*/
+
+
+.pie-de-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F190B7;
+    padding: 60px;
+    grid-area: pie-de-pagina;
+}
+
+.pie-de-pagina a img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+
+}
+
+
+.pie-de-pagina div div img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.pie-de-pagina div h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 25px;
+
+}
+
+.pie-de-pagina div iframe {
+    width: 200px;
+    height: 150px;
+}
+
+
+.pie-de-pagina div ul {
+    list-style: none;
+}
+
+.pie-de-pagina div ul li a {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.pie-de-pagina div ul li a:hover {
+    color: #A63EC5;
+    text-shadow: none;
+    transition: 1sg;
+}
+
+/*---HTML EL CLUB-----*/
+/*navegacion*/
+.navegador ul {
+    list-style: none;
+    display: flex;
+    margin: 40px;
+    justify-content: space-evenly;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navegador ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #0f0f0f;
+
+}
+
+.navegador ul li a:hover {
+    color: #CE49BF;
+    text-shadow: none;
+    transition: 1sg;
+}
+
+
+/*el club- historia*/
+.el-club {
+    display: flex;
+    margin: 40px;
+}
+
+.el-club .historia {
+    background-color: #FBD6D2;
+
+}
+
+.el-club .historia h2 {
+    margin: 20px;
+}
+
+.el-club div p {
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 30px;
+
+}
+
+/*el club- infaestructura*/
+.infraestructura {
+    background-color: #FBD6D2;
+}
+
+.infraestructura h2 {
+    margin: 20px;
+}
+
+.infraestructura div {
+    display: flex;
+    margin: 30px;
+
+}
+
+.infraestructura img {
+    width: 400px;
+    height: 200px;
+}
+
+
+/*el club- autoridades*/
+
+.autoridades {
+    background-color: #FBD6D2;
+    width: 100%;
+    height: 0 auto;
+
+}
+
+.autoridades h2 {
+    margin: 20px;
+}
+
+.autoridades ul {
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 30px;
+
+}
+
+
+
+/*---HTML DEPORTES------*/
+
+
+/*----HTML CONTACTOS*/
+
+
+/*----HTML CANTINA---*/
+
+
+.cantina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.cantina img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+.cantina .costillar {
+    width: 1000px;
+    height: 700px;
+}
+
+.cantina p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 20px;
+    margin-top: 200px;
+    text-align: center;
+
+
+}
+
+.menu .imagen-grande img {
+    width: 90vw;
+    height: 300px;
+    object-fit: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.36));
+    margin: 20px;
+}
+
+
+
+.menu>div .menu-horarios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    justify-content: space-around;
+
+}
+
+.menu .menu-horarios img {
+    width: 400px;
+    height: 600px;
+}
+
+.menu .menu-horarios ul {
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+
+}
+
+
+
+/*-------------media queries-------------*/
+@media screen and (max-width: 1200px) {
+
+
+    /* ENCABEZADO - NAVEGADOR */
+
+    .encabezado {
+        height: 60vh;
+    }
+
+    .encabezado a img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .encabezado nav ul {
+        bottom: 250px;
+        height: 30px;
+
+    }
+
+    /*PARTE PRINCIPAL*/
+
+    h1 {
+        font-size: 5rem;
+        width: 100%;
+        height: 20vh;
+    }
+
+    /*seccion uno*/
+
+    .ultimas-noticias {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .ultimas-noticias div {
+        justify-content: space-evenly;
+        width: 400px;
+        height: 400px;
+        margin: auto;
+    }
+
+    .ultimas-noticias div img {
+        width: 400px;
+        height: 400px;
+        padding: 0px;
+    }
+
+    .ultimas-noticias div iframe {
+        width: 400px;
+        height: 400px;
+        padding: 0px;
+    }
+
+    /*seccion dos*/
+
+    .galeria-de-fotos>div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .galeria-de-fotos div img {
+        width: 500px;
+        height: 350px;
+    }
+
+    /*     CANTINA     */
+
+    .cantina p {
+
+        margin-top: 20px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 830px) {
+
+    /*NAVEGADOR*/
+
+    .encabezado nav ul {
+        display: none;
+    }
+
+    /*PARTE PRINCIPAL*/
+
+    h1 {
+        font-size: 4rem;
+    }
+
+
+    /* PIE DE PAGINA*/
+    .pie-de-pagina {
+        flex-direction: column;
+    }
+
+    /* PAGINA EL CLUB*/
+
+    .infraestructura div {
+        flex-direction: column;
+    }
+
+    .navegador ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*     CANTINA      */
+    .cantina {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu .menu-horarios {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media screen and (max-width: 570px) {
+
+    /*encabezado*/
+
+    .encabezado {
+        width: 600px;
+
+    }
+
+    .encabezado a img {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    h2 {
+        font-size: 2rem;
+
+    }
+
+    .menu .imagen-grande img{
+        width: 100%;
+    }
+
+}
