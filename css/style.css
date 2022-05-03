@@ -42,51 +42,43 @@ html {
     background-position: center;
     background-size: cover;
     grid-area: encabezado;
-
+    position: relative;
 }
 
-.encabezado nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
+.encabezado .nav {
     position: absolute;
-    right: 0px;
-    bottom: 150px;
-    background-image: linear-gradient(to top, #FBD6D2, #F190B7);
-    height: 40px;
-
+    bottom: 0;
+    right: 0;
 }
 
-.navegador nav ul li {
-    margin: 20px;
+.encabezado .nav ul {
+    background-image: linear-gradient(to top, #FBD6D2, #F190B7);
+}
+
+.nav ul li {
+    margin: 10px;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.encabezado nav ul li a {
-    text-decoration: none;
-    padding: 20px;
+.nav ul li a {
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-    text-shadow: 2px 2px 2px #0f0f0f;
+    text-shadow: 1px 1px 1px #0f0f0f;
     font-size: 20px;
 
 }
 
-.encabezado nav ul li a:hover {
+.nav ul li a:hover {
     color: #A63EC5;
     text-shadow: none;
     transition: 1sg;
 }
 
 .encabezado a img {
-    width: 300px;
-    height: 300px;
     position: absolute;
     top: 150px;
     left: 50px;
-
-
 }
 
 
@@ -94,7 +86,7 @@ html {
 /*-----PAGINA PRINCIPAL----------*/
 
 /*--------------transformaciones y transiciones-----------*/
-.transicion:hover{
+.transicion:hover {
     transform: scale(1.5);
     transition-property: all;
     transition-duration: 3s;
@@ -102,11 +94,12 @@ html {
 
 /*    parte principal  */
 .parte-principal {
-    margin: 15px;
+    margin: 20px;
     list-style: 2px;
     position: relative;
     grid-area: parte-principal;
 }
+
 h1 {
     color: #a626aa;
     font-weight: bold;
@@ -355,7 +348,6 @@ h2 {
 
 
 /*---HTML DEPORTES------*/
-
 
 /*----HTML CONTACTOS*/
 
