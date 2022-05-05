@@ -26,7 +26,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.2fr auto 0.2fr;
-    gap: 3px 0px;
+    gap: 1px 0px;
     grid-template-areas:
         "encabezado encabezado"
         "parte-principal parte-principal"
@@ -502,9 +502,7 @@ h2 {
 
     /*NAVEGADOR*/
 
-    /* .encabezado nav ul {
-        display: none;
-    }*/
+
 
     /*PARTE PRINCIPAL*/
 
@@ -558,13 +556,11 @@ h2 {
 
     }
 
+
     h2 {
         font-size: 2rem;
 
     }
 
-    .menu .imagen-grande img {
-        width: 100%;
-    }
 
 }
