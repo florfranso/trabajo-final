@@ -45,22 +45,23 @@ html {
     position: relative;
 }
 
-.encabezado .nav {
-    position: absolute;
+.encabezado .barra-navegador {
+    position: relative;
+    align-items: flex-end;
     bottom: 0;
     right: 0;
 }
 
-.encabezado .nav ul {
+.encabezado .barra-navegador ul {
     background-image: linear-gradient(to top, #FBD6D2, #F190B7);
 }
 
-.nav ul li {
-    margin: 10px;
+.barra-navegador ul li {
+    margin: 5px;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.nav ul li a {
+.barra-navegador ul li a {
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -69,7 +70,7 @@ html {
 
 }
 
-.nav ul li a:hover {
+.barra-navegador ul li a:hover {
     color: #A63EC5;
     text-shadow: none;
     transition: 1sg;
@@ -80,6 +81,7 @@ html {
     top: 150px;
     left: 50px;
 }
+
 
 
 
@@ -497,14 +499,16 @@ h2 {
 
 }
 
-
 @media screen and (max-width: 830px) {
 
-    /*NAVEGADOR*/
 
-    /* .encabezado nav ul {
-        display: none;
-    }*/
+    /*NAVEGADOR*/
+    .encabezado .barra-navegador {
+        align-items: center;
+    }
+
+    
+
 
     /*PARTE PRINCIPAL*/
 
