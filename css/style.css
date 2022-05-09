@@ -1,12 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    /*box-sizing: border-box;¨*/
+    box-sizing: border-box;
 }
 
-h2 {
-    text-align: left;
-}
 
 h3 {
     text-align: center;
@@ -15,10 +12,6 @@ h3 {
 html {
     font-size: 62.5%;
 }
-
-/*tipografia*/
-
-
 
 /* -------ENCABEZADO- NAVEGADOR*--------*/
 
@@ -92,7 +85,7 @@ header {
 }
 
 h1 {
-    color: #a626aa;
+    color: white;
     font-weight: bold;
     font-size: 7rem;
     text-align: center;
@@ -105,10 +98,22 @@ h1 {
 }
 
 h2 {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to top, #FBD6D2, #F190B7);
+    font-weight: 900;
     font-family: 'Ubuntu', sans-serif;
     font-size: 3rem;
     color: black;
     line-height: 60px;
+
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
 
 }
 
@@ -126,20 +131,27 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    margin: 10px;
+    border-radius: 9px 9px 9px 9px;
+    -moz-border-radius: 9px 9px 9px 9px;
+    -webkit-border-radius: 9px 9px 9px 9px;
+    border: 1px solid #000000;
+    -webkit-box-shadow: 9px 10px 31px -21px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 10px 31px -21px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 10px 31px -21px rgba(0, 0, 0, 0.75);
 }
 
 .ultimas-noticias div img {
-    width: 300px;
+    width: 90%;
     height: 300px;
-    margin: 40px;
+    margin: 30px;
     object-fit: cover;
 }
 
 .ultimas-noticias div iframe {
-    width: 300px;
+    width: 90%;
     height: 300px;
-    margin: 40px
+    margin: 30px;
 }
 
 .ultimas-noticias div h3 {
@@ -150,8 +162,8 @@ h2 {
 .ultimas-noticias div p {
     font-size: 1.5rem;
     font-family: 'Ubuntu', sans-serif;
-
-
+    text-align: center;
+    margin: 10px;
 }
 
 /*SECCION DOS*/
@@ -159,7 +171,6 @@ h2 {
 
 .galeria-de-fotos {
     font-family: 'Roboto Mono', monospace;
-
 
 }
 
@@ -175,6 +186,9 @@ h2 {
     height: 400px;
     margin: 40px;
     object-fit: cover;
+    -webkit-box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
 }
 
 .galeria-de-fotos div h3 {
@@ -273,17 +287,17 @@ h2 {
 /*el club- historia*/
 .el-club {
     display: flex;
-    margin: 40px;
+    margin: 15px;
 }
 
-.el-club .historia {
-    background-color: #FBD6D2;
+.historia {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
 
 }
 
-.el-club .historia h2 {
-    margin: 20px;
-}
 
 .el-club div p {
     font-size: 2rem;
@@ -294,16 +308,12 @@ h2 {
 
 /*el club- infaestructura*/
 .infraestructura {
-    background-color: #FBD6D2;
+    background-color: white;
     width: 100%;
     height: auto;
-
-
+    border: 2px solid black;
 }
 
-.infraestructura h2 {
-    margin: 20px;
-}
 
 .infraestructura div {
     display: flex;
@@ -320,14 +330,11 @@ h2 {
 /*el club- autoridades*/
 
 .autoridades {
-    background-color: #FBD6D2;
+    background-color: white;
     width: 100%;
     height: auto;
+    border: 2px solid black;
 
-}
-
-.autoridades h2 {
-    margin: 20px;
 }
 
 .autoridades ul {
@@ -361,12 +368,17 @@ h2 {
     width: 600px;
     height: 400px;
     object-fit: cover;
-
+    -webkit-box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
 }
 
 .cantina .costillar {
     width: 1000px;
     height: 700px;
+    -webkit-box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
 }
 
 .cantina p {
@@ -381,11 +393,10 @@ h2 {
 }
 
 .menu .imagen-grande img {
-    width: 90vw;
+    width: 100%;
     height: 300px;
     object-fit: cover;
     background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.36));
-    margin: 20px;
 }
 
 
@@ -403,6 +414,9 @@ h2 {
 .menu .menu-horarios img {
     width: 400px;
     height: 600px;
+    -webkit-box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
 }
 
 .menu .menu-horarios ul {
@@ -514,8 +528,9 @@ h2 {
         display: flex;
         flex-wrap: wrap;
     }
+
     /*CONTACTOS*/
-    .mapa{
+    .mapa {
         width: 100%;
     }
 
@@ -556,10 +571,9 @@ h2 {
     }
 
     .menu .imagen-grande img {
-        width: 90vw;
         height: 150px;
     }
-    
+
 
     .menu .menu-horarios img {
         width: 100%;
