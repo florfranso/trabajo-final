@@ -1,0 +1,584 @@
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+
+/*h3 {
+    text-align: center;
+}*/
+
+/*html {
+    font-size: 62.5%;
+}*/
+
+/* -------ENCABEZADO- NAVEGADOR*--------*/
+
+/*.grid-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr auto 0.2fr;
+    gap: 1px 0px;
+    grid-template-areas:
+        "encabezado encabezado"
+        "parte-principal parte-principal"
+        "pie-de-pagina pie-de-pagina";
+}*/
+
+/*header {
+    grid-area: encabezado;
+
+}*/
+
+/*.hero {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.26)), url(../multimedia/imagenes/pileta.jpg);
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero a img {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+
+*/
+
+/*.barra-navegador {
+    background: linear-gradient(to top, #FBD6D2, #F190B7);
+}
+
+.barra-navegador ul li {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.barra-navegador ul li a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #0f0f0f;
+    font-size: 15px;
+}
+
+.barra-navegador ul li a:hover {
+    color: #A63EC5;
+    text-shadow: none;
+    transition: 1sg;
+}
+
+
+/*-----PAGINA PRINCIPAL----------
+
+/*--------------transformaciones y transiciones-----------*/
+
+
+/*    parte principal  
+.parte-principal {
+    grid-area: parte-principal;
+}*/
+
+/*h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 7rem;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: linear-gradient(to top, #FBD6D2, #F190B7);
+    width: 100%;
+    height: 15vh;
+
+
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to top, #FBD6D2, #F190B7);
+    font-weight: 900;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    color: black;
+    line-height: 60px;
+
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+
+}
+
+/*-----SECCION UNO-----*/
+/*.ultimas-noticias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.ultimas-noticias div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 9px 9px 9px 9px;
+    -moz-border-radius: 9px 9px 9px 9px;
+    -webkit-border-radius: 9px 9px 9px 9px;
+    border: 1px solid #000000;
+    -webkit-box-shadow: 9px 10px 31px -21px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 10px 31px -21px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 10px 31px -21px rgba(0, 0, 0, 0.75);
+}
+
+.ultimas-noticias div img {
+    width: 90%;
+    height: 300px;
+    margin: 30px;
+    object-fit: cover;
+}
+
+.ultimas-noticias div iframe {
+    width: 90%;
+    height: 300px;
+    margin: 30px;
+}
+
+.ultimas-noticias div h3 {
+    font-size: 2rem;
+    list-style: 0.5;
+}
+
+.ultimas-noticias div p {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin: 10px;
+}*/
+
+/*SECCION DOS*/
+
+/*
+.galeria-de-fotos {
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.galeria-de-fotos>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.galeria-de-fotos div img {
+    width: 550px;
+    height: 400px;
+    margin: 40px;
+    object-fit: cover;
+    -webkit-box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+}
+
+.galeria-de-fotos div h3 {
+  font-size: 2rem;
+    list-style: 0.5;  
+}
+*/
+
+
+
+/*PIE DE PAGINA*/
+
+
+/*.pie-de-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F190B7;
+    padding: 60px;
+    grid-area: pie-de-pagina;
+}
+
+.pie-de-pagina a img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+
+}
+
+
+.pie-de-pagina div div img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.pie-de-pagina div h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 25px;
+
+}
+
+.pie-de-pagina div iframe {
+    width: 200px;
+    height: 150px;
+}
+
+
+.pie-de-pagina div ul {
+    list-style: none;
+}
+
+.pie-de-pagina div ul li a {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.pie-de-pagina div ul li a:hover {
+    color: #A63EC5;
+    text-shadow: none;
+    transition: 1sg;
+}
+
+.transicion:hover {
+    transform: scale(1.5);
+    transition-property: all;
+    transition-duration: 3s;
+}*/
+
+/*---HTML EL CLUB-----*/
+/*navegacion*/
+/*.navegador ul {
+    list-style: none;
+    display: flex;
+    margin: 40px;
+    justify-content: space-evenly;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navegador ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #0f0f0f;
+
+}
+
+.navegador ul li a:hover {
+    color: #CE49BF;
+    text-shadow: none;
+    transition: 1sg;
+}
+
+
+/*el club- historia
+.el-club {
+    display: flex;
+    margin: 15px;
+}
+
+.historia {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+
+}
+
+
+.el-club div p {
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 30px;
+
+}
+
+/*el club- infaestructura
+.infraestructura {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+}
+
+
+.infraestructura div {
+    display: flex;
+    margin: 30px;
+
+}
+
+.infraestructura img {
+    width: 400px;
+    height: 200px;
+}
+
+*/
+/*el club- autoridades
+
+.autoridades {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+
+}
+
+.autoridades ul {
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 30px;
+
+}
+*/
+
+
+/*---HTML DEPORTES------*/
+
+/*----HTML CONTACTOS------*/
+
+/*----HTML CANTINA---*/
+
+/*
+.cantina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.cantina img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    -webkit-box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+}
+
+.cantina .costillar {
+    width: 1000px;
+    height: 700px;
+    -webkit-box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+}
+
+.cantina p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 20px;
+    margin-top: 200px;
+    text-align: center;
+
+
+}
+
+.menu .imagen-grande img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.36));
+}
+
+
+
+.menu>div .menu-horarios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    justify-content: space-around;
+
+}
+
+.menu .menu-horarios img {
+    width: 400px;
+    height: 600px;
+    -webkit-box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 6px 23px 0px rgba(0, 0, 0, 0.75);
+}
+
+.menu .menu-horarios ul {
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+
+}
+*/
+
+
+/*-------------media queries-------------*/
+/*@media screen and (max-width: 1200px) {
+
+
+    /* ENCABEZADO - NAVEGADOR */
+
+
+    /*.hero a img {
+        top: 200px;
+        width: 150px;
+        height: 150px;
+
+    }
+
+
+    /*PARTE PRINCIPAL
+
+    h1 {
+        font-size: 5rem;
+        width: 100%;
+    }
+
+    /*seccion uno
+
+    .ultimas-noticias {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .ultimas-noticias div img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .ultimas-noticias div iframe {
+        width: 100%;
+        height: 600px;
+        padding: 0px;
+    }
+
+    /*seccion dos
+
+    .galeria-de-fotos>div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .galeria-de-fotos div img {
+        width: 100%;
+        height: 350px;
+        margin: 0;
+    }
+
+    /*     CANTINA     
+
+    .cantina p {
+
+        margin-top: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 830px) {
+
+
+    /*PARTE PRINCIPAL
+
+    h1 {
+        font-size: 4rem;
+    }
+
+
+    /* PIE DE PAGINA
+    .pie-de-pagina {
+        flex-direction: column;
+    }
+
+    /* PAGINA EL CLUB*
+    .infraestructura div {
+        flex-direction: column;
+    }
+
+    .navegador ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*     CANTINA      
+    .cantina {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu .menu-horarios {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*CONTACTOS*
+    .mapa {
+        width: 100%;
+    }
+
+
+/*
+
+@media screen and (max-width: 570px) {
+
+    /*encabezado*
+
+    h1 {
+        font-size: 3rem;
+    }
+
+
+    h2 {
+        font-size: 1.5rem;
+
+    }
+
+    /*  EL CLUB- INFRAESTRUCTURA*
+    .infraestructura img {
+        width: 100%;
+        height: 200px;
+    }
+
+    /*CANTINA*
+    .cantina img {
+        width: 100%;
+    }
+
+    .cantina .costillar {
+        width: 100%;
+    }
+
+    .cantina p {
+        margin-top: 0;
+    }
+
+    .menu .imagen-grande img {
+        height: 150px;
+    }
+
+
+    .menu .menu-horarios img {
+        width: 100%;
+        height: 420px;
+    }
+
+
+}*/

@@ -1,0 +1,45 @@
+@import '../base/extends';
+@import '../base/listas';
+@import '../base/variables';
+
+/*HEADER DE TODAS LAS PAGINAS*/
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr auto 0.2fr;
+    gap: 1px 0px;
+    grid-template-areas:
+        "encabezado encabezado"
+        "parte-principal parte-principal"
+        "pie-de-pagina pie-de-pagina";
+}
+
+/*BARRA NAVEGACION*/
+header {
+    grid-area: encabezado;
+
+    .barra-navegador {
+        background: linear-gradient(to top, #FBD6D2, #F190B7);
+
+        ul {
+            li {
+                font-family: $tipografia-texto;
+
+                a {
+                    color: nth($colores, 2 );
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-shadow: 1px 1px 1px #0f0f0f;
+                    font-size: 22px;
+
+                    &:hover {
+                        color: nth($colores, 1 );
+                        text-shadow: none;
+                        transition: 1sg;
+                    }
+                }
+            }
+        }
+    }
+}
+

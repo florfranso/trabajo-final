@@ -1,0 +1,153 @@
+@media screen and (max-width: 1200px) {
+
+
+    /* ENCABEZADO - NAVEGADOR */
+
+
+    .parte-principal .hero a img {
+        top: 300px;
+        width: 150px;
+        height: 150px;
+
+    }
+
+
+    /*PARTE PRINCIPAL*/
+
+    h1 {
+        font-size: 5rem;
+        width: 100%;
+    }
+
+    /*seccion uno*/
+
+    .ultimas-noticias {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .ultimas-noticias div img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .ultimas-noticias div iframe {
+        width: 100%;
+        height: 600px;
+        padding: 0px;
+    }
+
+    /*seccion dos*/
+
+    .galeria-de-fotos>div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .galeria-de-fotos div div img {
+        width: 100%;
+        height: 350px;
+        margin: 0;
+    }
+
+    /*     CANTINA     */
+
+    .cantina p {
+
+        margin-top: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 830px) {
+
+
+    /*PARTE PRINCIPAL*/
+
+    h1 {
+        font-size: 4rem;
+    }
+
+
+    /* PIE DE PAGINA*/
+    .pie-de-pagina {
+        flex-direction: column;
+    }
+
+    /* PAGINA EL CLUB*/
+
+    .infraestructura div {
+        flex-direction: column;
+    }
+
+    .navegador ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*     CANTINA      */
+    .cantina {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu .menu-horarios {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*CONTACTOS*/
+    .mapa {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 570px) {
+
+    /*encabezado*/
+
+    h1 {
+        font-size: 3rem;
+    }
+
+
+    h2 {
+        font-size: 1.5rem;
+
+    }
+
+    /*  EL CLUB- INFRAESTRUCTURA*/
+    .infraestructura img {
+        width: 100%;
+        height: 200px;
+    }
+
+    /*CANTINA*/
+    .cantina img {
+        width: 100%;
+    }
+
+    .cantina .costillar {
+        width: 100%;
+    }
+
+    .cantina p {
+        margin-top: 0;
+    }
+
+    .menu .imagen-grande img {
+        height: 150px;
+    }
+
+
+    .menu .menu-horarios img {
+        width: 100%;
+        height: 420px;
+    }
+
+
+}
