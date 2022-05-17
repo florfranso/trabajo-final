@@ -236,7 +236,7 @@ h3 {
         }
 
         .menu-horarios {
-            @include flex (row, space-around);
+            @include flex (flex, space-around);
             align-items: center;
             margin: 50px;
 
