@@ -1,6 +1,7 @@
 @import '../base/extends';
 @import '../base/listas';
 @import '../base/variables';
+@import '../base/mixin';
 
 /*PARTE PRINCIPAL*/
 /*INDEX*/
@@ -9,8 +10,7 @@
     grid-area: parte-principal;
 
     .hero {
-        display: flex;
-        justify-content: space-between;
+        @include flex (flex , space-between );
         background-image: linear-gradient(rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.26)), url(../multimedia/imagenes/pileta.jpg);
         width: 100%;
         height: 60vh;
@@ -42,15 +42,13 @@ h3 {
 }
 
 .ultimas-noticias {
-    display: flex;
-    justify-content: space-between;
+    @include flex (flex, space-between);
     align-items: center;
     font-family: $tipografia-titulos;
 
     div {
-        display: flex;
+        @include flex (flex, center);
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         margin: 10px;
         border-radius: 9px 9px 9px 9px;
@@ -87,9 +85,8 @@ h3 {
 /*SECCION DOS*/
 .galeria-de-fotos {
     div {
-        display: flex;
+        @include flex (flex, space-around);
         align-items: center;
-        justify-content: space-around;
 
         div {
             flex-direction: column;
@@ -111,10 +108,9 @@ h3 {
 /*navegador de secciones*/
 .navegador {
     ul {
+        @include flex (flex, space-evenly);
         list-style: none;
-        display: flex;
         margin: 40px;
-        justify-content: space-evenly;
         font-family: $tipografia-texto;
 
         li {
@@ -195,9 +191,8 @@ h3 {
 /*PARTE PRINCIPAL CANTINA*/
 /*seccion uno*/
 .cantina {
-    display: flex;
+    @include flex (flex, space-around);
     flex-direction: row;
-    justify-content: space-around;
     margin: 30px;
 
     img {
@@ -241,12 +236,9 @@ h3 {
         }
 
         .menu-horarios {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            @include flex (row, space-around);
             align-items: center;
             margin: 50px;
-            justify-content: space-around;
 
             img {
                 width: 400px;

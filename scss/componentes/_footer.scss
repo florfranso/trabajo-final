@@ -1,20 +1,20 @@
-@import '../base/extends';
 @import '../base/listas';
 @import '../base/variables';
+@import '../base/mapa';
 
 /*FOOTER*/
 
 .pie-de-pagina {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: map-get($footer, align-items);
     background-color: #F190B7;
     padding: 60px;
     grid-area: pie-de-pagina;
 
     a {
         img {
-            width: 200px;
+            width: map-get($footer , width);
             height: 200px;
             margin: 20px;
         }
@@ -28,7 +28,8 @@
             line-height: 25px;
         }
 
-        iframe {  width: 200px;
+        iframe {  
+            width: map-get($footer , width );
             height: 150px;}
     }
 
@@ -46,7 +47,7 @@
                     height: 80px;
 
                     iframe { 
-                        width: 200px;
+                        width: map-get($footer, width );
                         height: 150px;}
                 }
             }
