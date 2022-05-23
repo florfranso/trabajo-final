@@ -5,7 +5,6 @@
 
 
     .parte-principal .hero a img {
-        top: 300px;
         width: 150px;
         height: 150px;
 
@@ -59,10 +58,10 @@
     }
 
     .pie-de-pagina a img {
-            top: 300px;
-            width: 150px;
-            height: 150px;
-    
+        top: 300px;
+        width: 150px;
+        height: 150px;
+
     }
 
 
@@ -80,8 +79,24 @@
 
     /* PIE DE PAGINA*/
     .pie-de-pagina {
-        flex-direction: column;
+        flex-direction: row;
+        padding: auto;
     }
+
+    .pie-de-pagina div iframe {
+        width: 150px;
+        height: 100px;
+    }
+
+    .pie-de-pagina div div a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .pie-de-pagina div ul li a {
+        display: none;
+    }
+
 
     /* PAGINA EL CLUB*/
 
@@ -133,6 +148,15 @@
         height: 200px;
     }
 
+    /*DPORTES*/
+    .titulo-acordeon {
+        font-size: 1.5rem;
+    }
+
+    .categorias li {
+        font-size: 1rem;
+    }
+
     /*CANTINA*/
     .cantina img {
         width: 100%;
@@ -156,5 +180,8 @@
         height: 420px;
     }
 
-
+    /*pie de pagina*/
+    .pie-de-pagina {
+        flex-direction: column;
+    }
 }

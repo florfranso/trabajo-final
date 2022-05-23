@@ -8,6 +8,73 @@ html {
   font-size: 62.5%;
 }
 
+/*anular div del host*/
+.disclamer {
+  display: none;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 7rem;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  background-image: linear-gradient(to top, #FBD6D2, #F190B7);
+  width: 100%;
+  height: 15vh;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to top, #FBD6D2, #F190B7);
+  font-weight: 900;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+  color: black;
+  line-height: 60px;
+}
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  list-style: 0.5;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 7rem;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  background-image: linear-gradient(to top, #FBD6D2, #F190B7);
+  width: 100%;
+  height: 15vh;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to top, #FBD6D2, #F190B7);
+  font-weight: 900;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+  color: black;
+  line-height: 60px;
+}
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  list-style: 0.5;
+  text-align: center;
+}
+
 /*HEADER DE TODAS LAS PAGINAS*/
 .grid-contenedor {
   display: grid;
@@ -87,9 +154,9 @@ h3 {
   background-size: cover;
 }
 .parte-principal .hero a img {
-  position: absolute;
   top: 150px;
   left: 50px;
+  justify-content: flex-start;
 }
 
 /*SECCION UNO*/
@@ -219,8 +286,26 @@ h3 {
   font-size: 2rem;
   margin: 30px;
 }
+.el-club .autoridades ul p {
+  font-weight: lighter;
+}
 
 /*PARTE PRINCIPAL DEPORTES*/
+.titulo-acordeon {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: black;
+}
+
+.categorias li {
+  list-style: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #F190B7;
+}
+
 /*PARTE PRINCIPAL CANTINA*/
 /*seccion uno*/
 .cantina {
@@ -278,16 +363,73 @@ h3 {
   list-style: none;
   font-family: "Ubuntu", sans-serif;
   font-size: 25px;
+  text-align: center;
+}
+.menu div .menu-horarios div ul li {
+  color: black;
 }
 
 /*PARTE PRINCIAPL CONTACTOS*/
+section div ul {
+  list-style: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 35px;
+  text-align: center;
+}
+section div ul li {
+  color: #F190B7;
+}
+section div ul li p {
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+}
+section div p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 35px;
+  text-align: center;
+}
+section div iframe {
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 7rem;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  background-image: linear-gradient(to top, #FBD6D2, #F190B7);
+  width: 100%;
+  height: 15vh;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to top, #FBD6D2, #F190B7);
+  font-weight: 900;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+  color: black;
+  line-height: 60px;
+}
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  list-style: 0.5;
+  text-align: center;
+}
+
 /*FOOTER*/
 .pie-de-pagina {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #F190B7;
-  padding: 60px;
+  padding: 50px;
   grid-area: pie-de-pagina;
 }
 .pie-de-pagina a img {
@@ -338,7 +480,6 @@ h3 {
 @media screen and (max-width: 1200px) {
   /* ENCABEZADO - NAVEGADOR */
   .parte-principal .hero a img {
-    top: 300px;
     width: 150px;
     height: 150px;
   }
@@ -397,7 +538,22 @@ h3 {
 
   /* PIE DE PAGINA*/
   .pie-de-pagina {
-    flex-direction: column;
+    flex-direction: row;
+    padding: auto;
+  }
+
+  .pie-de-pagina div iframe {
+    width: 150px;
+    height: 100px;
+  }
+
+  .pie-de-pagina div div a img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .pie-de-pagina div ul li a {
+    display: none;
   }
 
   /* PAGINA EL CLUB*/
@@ -442,6 +598,15 @@ h3 {
     height: 200px;
   }
 
+  /*DPORTES*/
+  .titulo-acordeon {
+    font-size: 1.5rem;
+  }
+
+  .categorias li {
+    font-size: 1rem;
+  }
+
   /*CANTINA*/
   .cantina img {
     width: 100%;
@@ -462,6 +627,11 @@ h3 {
   .menu .menu-horarios img {
     width: 100%;
     height: 420px;
+  }
+
+  /*pie de pagina*/
+  .pie-de-pagina {
+    flex-direction: column;
   }
 }
 

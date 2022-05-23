@@ -1,7 +1,5 @@
-@import '../base/extends';
-@import '../base/listas';
 @import '../base/variables';
-@import '../base/mixin';
+
 
 /*PARTE PRINCIPAL*/
 /*INDEX*/
@@ -10,7 +8,7 @@
     grid-area: parte-principal;
 
     .hero {
-        @include flex (flex , space-between );
+        @include flex (flex, space-between);
         background-image: linear-gradient(rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.26)), url(../multimedia/imagenes/pileta.jpg);
         width: 100%;
         height: 60vh;
@@ -19,9 +17,9 @@
 
         a {
             img {
-                position: absolute;
                 top: 150px;
                 left: 50px;
+                justify-content: flex-start;
             }
         }
     }
@@ -183,12 +181,35 @@ h3 {
             font-weight: bold;
             font-size: 2rem;
             margin: 30px;
+
+            p {
+                font-weight: lighter;
+            }
         }
+
+
     }
 }
 
 /*PARTE PRINCIPAL DEPORTES*/
+.titulo-acordeon{
+    font-family: $tipografia-texto;
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: nth($colores ,  3);
+}
+.categorias{
+    
+    li{
+    list-style: none;
+    font-family: $tipografia-texto;
+    font-weight: bold;
+    font-size: 2rem;
+    color: nth($colores , 4 );
+}
+}
 /*PARTE PRINCIPAL CANTINA*/
+
 /*seccion uno*/
 .cantina {
     @include flex (flex, space-around);
@@ -253,6 +274,10 @@ h3 {
                     list-style: none;
                     font-family: $tipografia-texto;
                     font-size: 25px;
+                    text-align: center;
+                    li{
+                        color: nth($colores, 3 );
+                    }
                 }
             }
         }
@@ -260,3 +285,34 @@ h3 {
 }
 
 /*PARTE PRINCIAPL CONTACTOS*/
+section {
+    div {
+        ul {
+            list-style: none;
+            font-family: $tipografia-titulos;
+            font-size: 35px;
+            text-align: center;
+
+            li {
+                color: nth($colores, 4 );
+                p {
+                    font-family: $tipografia-texto;
+                    color: nth($colores , 3 );
+                }
+            }
+        }
+    }
+
+    div {
+
+        p {
+            font-family: $tipografia-titulos;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        iframe {
+justify-content: center;
+        }
+    }
+}
