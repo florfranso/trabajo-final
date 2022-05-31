@@ -157,18 +157,19 @@ h3 {
         border: 2px solid nth($colores, 3);
 
         div {
-            margin: 30px;
 
             img {
-                width: 400px;
                 height: 200px;
                 float: left;
+                margin: 15px;
             }
 
             p {
 
                 font-size: 2rem;
                 font-family: $tipografia-texto;
+                margin: 30px;
+                text-align: justify;
             }
         }
     }
@@ -183,11 +184,14 @@ h3 {
             list-style: none;
             font-family: $tipografia-texto;
             font-weight: bold;
-            font-size: 2rem;
+            font-size: 3rem;
             margin: 30px;
+
+            text-align: center;
 
             p {
                 font-weight: lighter;
+                color: nth($colores , 4);
             }
         }
 
@@ -313,15 +317,15 @@ h3 {
     }
 
 
-        div {
-            @include flex (flex, center);
-            align-items: center;
-            flex-direction: column;
+    div {
+        @include flex (flex, center);
+        align-items: center;
+        flex-direction: column;
 
-            p {
-                font-family: $tipografia-titulos;
-                font-size: 35px;
-            }
-
+        p {
+            font-family: $tipografia-titulos;
+            font-size: 35px;
         }
+
     }
+}
