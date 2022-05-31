@@ -9,7 +9,7 @@ html {
 }
 
 /*anular div del host*/
-.disclamer {
+.disclaimer {
   display: none;
 }
 
@@ -93,6 +93,7 @@ header .barra-navegador {
 }
 header .barra-navegador ul li {
   font-family: "Ubuntu", sans-serif;
+  margin-left: 60px;
 }
 header .barra-navegador ul li a {
   color: white;
@@ -167,6 +168,7 @@ h3 {
   font-family: "Roboto Mono", monospace;
 }
 .ultimas-noticias div {
+  resize: none;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -185,6 +187,7 @@ h3 {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
   margin: 10px;
+  text-align: justify;
 }
 .ultimas-noticias div img {
   width: 90%;
@@ -240,7 +243,6 @@ h3 {
 
 /*seccion uno*/
 .el-club {
-  display: flex;
   margin: 15px;
 }
 .el-club .historia {
@@ -253,6 +255,7 @@ h3 {
   font-size: 2rem;
   font-family: "Ubuntu", sans-serif;
   margin: 30px;
+  text-align: justify;
 }
 .el-club .infraestructura {
   background-color: white;
@@ -261,17 +264,16 @@ h3 {
   border: 2px solid black;
 }
 .el-club .infraestructura div {
-  display: flex;
   margin: 30px;
 }
 .el-club .infraestructura div img {
   width: 400px;
   height: 200px;
+  float: left;
 }
 .el-club .infraestructura div p {
   font-size: 2rem;
   font-family: "Ubuntu", sans-serif;
-  margin: 30px;
 }
 .el-club .autoridades {
   background-color: white;
@@ -370,26 +372,28 @@ h3 {
 }
 
 /*PARTE PRINCIAPL CONTACTOS*/
-section div ul {
+.contactos div ul {
   list-style: none;
   font-family: "Roboto Mono", monospace;
   font-size: 35px;
   text-align: center;
 }
-section div ul li {
+.contactos div ul li {
   color: #F190B7;
 }
-section div ul li p {
+.contactos div ul li p {
   font-family: "Ubuntu", sans-serif;
   color: black;
 }
-section div p {
+.contactos div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contactos div p {
   font-family: "Roboto Mono", monospace;
   font-size: 35px;
-  text-align: center;
-}
-section div iframe {
-  justify-content: center;
 }
 
 h1 {
@@ -463,15 +467,15 @@ h3 {
 .pie-de-pagina div ul {
   list-style: none;
 }
-.pie-de-pagina div ul li a {
+.pie-de-pagina div ul li {
   text-decoration: none;
-  padding: 20px;
+  padding: 5px;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 20px;
 }
-.pie-de-pagina div ul li a:hover {
+.pie-de-pagina div ul li:hover {
   color: #A63EC5;
   text-shadow: none;
   transition: 1sg;
@@ -536,6 +540,11 @@ h3 {
     font-size: 4rem;
   }
 
+  header .barra-navegador ul li a {
+    font-size: 15px;
+    margin-left: none;
+  }
+
   /* PIE DE PAGINA*/
   .pie-de-pagina {
     flex-direction: row;
@@ -552,7 +561,7 @@ h3 {
     height: 40px;
   }
 
-  .pie-de-pagina div ul li a {
+  .pie-de-pagina div ul li {
     display: none;
   }
 

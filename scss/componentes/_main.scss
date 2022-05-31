@@ -45,6 +45,7 @@ h3 {
     font-family: $tipografia-titulos;
 
     div {
+        resize: none;
         @include flex (flex, center);
         flex-direction: column;
         align-items: center;
@@ -62,6 +63,8 @@ h3 {
             font-family: $tipografia-texto;
             text-align: center;
             margin: 10px;
+            text-align: justify;
+
         }
 
         img {
@@ -130,7 +133,6 @@ h3 {
 
 /*seccion uno*/
 .el-club {
-    display: flex;
     margin: 15px;
 
     .historia {
@@ -143,6 +145,8 @@ h3 {
             font-size: 2rem;
             font-family: $tipografia-texto;
             margin: 30px;
+            text-align: justify;
+
         }
     }
 
@@ -153,18 +157,18 @@ h3 {
         border: 2px solid nth($colores, 3);
 
         div {
-            display: flex;
             margin: 30px;
 
             img {
                 width: 400px;
                 height: 200px;
+                float: left;
             }
 
             p {
+
                 font-size: 2rem;
                 font-family: $tipografia-texto;
-                margin: 30px;
             }
         }
     }
@@ -192,22 +196,24 @@ h3 {
 }
 
 /*PARTE PRINCIPAL DEPORTES*/
-.titulo-acordeon{
+.titulo-acordeon {
     font-family: $tipografia-texto;
     font-weight: bold;
     font-size: 3.5rem;
-    color: nth($colores ,  3);
+    color: nth($colores , 3);
 }
-.categorias{
-    
-    li{
-    list-style: none;
-    font-family: $tipografia-texto;
-    font-weight: bold;
-    font-size: 2rem;
-    color: nth($colores , 4 );
+
+.categorias {
+
+    li {
+        list-style: none;
+        font-family: $tipografia-texto;
+        font-weight: bold;
+        font-size: 2rem;
+        color: nth($colores , 4);
+    }
 }
-}
+
 /*PARTE PRINCIPAL CANTINA*/
 
 /*seccion uno*/
@@ -232,6 +238,7 @@ h3 {
         margin: 20px;
         margin-top: 200px;
         text-align: center;
+
     }
 
     .costillar {
@@ -275,8 +282,9 @@ h3 {
                     font-family: $tipografia-texto;
                     font-size: 25px;
                     text-align: center;
-                    li{
-                        color: nth($colores, 3 );
+
+                    li {
+                        color: nth($colores, 3);
                     }
                 }
             }
@@ -285,7 +293,7 @@ h3 {
 }
 
 /*PARTE PRINCIAPL CONTACTOS*/
-section {
+.contactos {
     div {
         ul {
             list-style: none;
@@ -294,25 +302,26 @@ section {
             text-align: center;
 
             li {
-                color: nth($colores, 4 );
+                color: nth($colores, 4);
+
                 p {
                     font-family: $tipografia-texto;
-                    color: nth($colores , 3 );
+                    color: nth($colores , 3);
                 }
             }
         }
     }
 
-    div {
 
-        p {
-            font-family: $tipografia-titulos;
-            font-size: 35px;
-            text-align: center;
-        }
+        div {
+            @include flex (flex, center);
+            align-items: center;
+            flex-direction: column;
 
-        iframe {
-justify-content: center;
+            p {
+                font-family: $tipografia-titulos;
+                font-size: 35px;
+            }
+
         }
     }
-}

@@ -23,6 +23,7 @@ header {
         ul {
             li {
                 font-family: $tipografia-texto;
+                margin-left: 60px;
 
                 a {
                     color: nth($colores, 2 );
