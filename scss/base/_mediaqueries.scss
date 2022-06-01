@@ -76,78 +76,103 @@
         font-size: 4rem;
     }
 
-    header {
-        .barra-navegador {
-            ul {
-                li {
-                    a {
-                        font-size: 15px;
-                        margin-left: none;
-                    }
+    .navegador{
+        h1{
+            line-height: 80px;
+        }
+    }
+
+    .deporte{
+        h1{
+            line-height: 80px;
+        }
+    }
+
+    .contactos {
+        h1{
+            line-height: 80px;
+        }
+    }
+    .h1Cantina{
+        h1{
+            line-height: 80px;
+        }
+    }
+
+
+
+header {
+    .barra-navegador {
+        ul {
+            li {
+                a {
+                    font-size: 15px;
+                    margin-left: none;
                 }
             }
         }
     }
+}
 
 
-    /* PIE DE PAGINA*/
-    .pie-de-pagina {
-        flex-direction: row;
-        padding: auto;
-    }
+/* PIE DE PAGINA*/
+.pie-de-pagina {
+    flex-direction: row;
+    padding: auto;
+}
 
-    .pie-de-pagina div iframe {
-        width: 150px;
-        height: 100px;
-    }
+.pie-de-pagina div iframe {
+    width: 150px;
+    height: 100px;
+}
 
-    .pie-de-pagina div div a img {
-        width: 40px;
-        height: 40px;
-    }
+.pie-de-pagina div div a img {
+    width: 40px;
+    height: 40px;
+}
 
-    .pie-de-pagina div ul li {
-        display: none;
-    }
-
-
-    /* PAGINA EL CLUB*/
-
-    .infraestructura div {
-        flex-direction: column;
-    }
+.pie-de-pagina div ul li {
+    display: none;
+}
 
 
-    .navegador ul {
-        flex-direction: column;
-        text-align: center;
-    }
+/* PAGINA EL CLUB*/
 
-    /*     CANTINA      */
-    .cantina {
-        display: flex;
-        flex-wrap: wrap;
-    }
+.infraestructura div {
+    flex-direction: column;
+}
 
-    .menu {
-        div {
-            .imagen-grande {
-                display: none;
-            }
 
-            .menu-horarios {
-                display: flex;
-                flex-wrap: wrap;
-                margin: 10px;
-            }
+.navegador ul {
+    flex-direction: column;
+    text-align: center;
+}
+
+/*     CANTINA      */
+.cantina {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu {
+    div {
+        .imagen-grande {
+            display: none;
+        }
+
+        .menu-horarios {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
         }
     }
+}
 
 
-    /*CONTACTOS*/
-    .mapa {
-        width: 100%;
-    }
+/*CONTACTOS*/
+.mapa {
+    width: 100%;
+}
 }
 
 
@@ -218,8 +243,11 @@
                     width: 100%;
                     height: 420px;
                 }
-                div{
-                    ul{font-size: 1.5rem;}
+
+                div {
+                    ul {
+                        font-size: 1.5rem;
+                    }
                 }
             }
         }

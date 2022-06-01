@@ -448,6 +448,22 @@ header .barra-navegador ul li a:hover {
     font-size: 4rem;
   }
 
+  .navegador h1 {
+    line-height: 80px;
+  }
+
+  .deporte h1 {
+    line-height: 80px;
+  }
+
+  .contactos h1 {
+    line-height: 80px;
+  }
+
+  .h1Cantina h1 {
+    line-height: 80px;
+  }
+
   header .barra-navegador ul li a {
     font-size: 15px;
     margin-left: none;
